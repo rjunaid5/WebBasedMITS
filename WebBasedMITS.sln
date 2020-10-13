@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBasedMITS", "WebBasedMITS\WebBasedMITS.csproj", "{1606EBA3-76E7-4C32-82B6-78B1B854F81E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeBBasedMITSData", "WeBBasedMITSData\WeBBasedMITSData.csproj", "{BC768F7D-965C-4D7C-9B8D-C77DB0B70AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1606EBA3-76E7-4C32-82B6-78B1B854F81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1606EBA3-76E7-4C32-82B6-78B1B854F81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1606EBA3-76E7-4C32-82B6-78B1B854F81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1606EBA3-76E7-4C32-82B6-78B1B854F81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC768F7D-965C-4D7C-9B8D-C77DB0B70AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC768F7D-965C-4D7C-9B8D-C77DB0B70AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC768F7D-965C-4D7C-9B8D-C77DB0B70AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC768F7D-965C-4D7C-9B8D-C77DB0B70AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {623FFEEA-B9F8-4992-A009-AE5E5EF6C4D7}
+	EndGlobalSection
+EndGlobal

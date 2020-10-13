@@ -1,0 +1,35 @@
+﻿
+@model IEnumerable<WeBBasedMITSData.JunctionList>
+
+@{
+	ViewBag.Title = "GetJunctionList";
+}
+
+<button class="btn btn-primary" onclick="location.href='@Url.Action("Create New", "Create")';return false;">+Add Junction</button>
+<table class="table table-bordered table-responsive table-hover table-striped table-light">
+	<tr>
+		<th>Junction ID </th>
+		<th>Junction Name </th>
+		<th>District</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th></th>
+
+	</tr>
+	@foreach (var d in Model)
+	{
+<tr>
+	<td>@d.JunctionId</td>
+	<td>@d.Name</td>
+	<td>@d.District</td>
+	<td>@d.Latitude</td>
+	<td>@d.Longitude</td>
+	<td>
+		@Html.ActionLink("Edit", "Edit", new { id = d.Id }) |
+		@Html.ActionLink("Detail", "DetailsByID", new { id = d.Id }) |
+		@Html.ActionLink("Delete", "Delete", new { id = d.Id })
+	</td>
+</tr>
+
+	}
+</table>

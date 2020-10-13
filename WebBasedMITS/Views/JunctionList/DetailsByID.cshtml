@@ -1,0 +1,131 @@
+﻿@model WeBBasedMITSData.JunctionList
+@{
+	ViewBag.Title = "DetailsByID";
+}
+@{
+	var latitude = (decimal)22.9019;
+	var longitude = (decimal)64.5176;
+	var zoomLevel = 9;
+
+	var junctionFeaturesName = string.Empty;
+	if (Model.Latitude != null)
+	{
+		latitude = Model.Latitude.Value;
+		zoomLevel = 16;
+	}
+
+	if (Model.Longitude != null)
+	{
+		longitude = Model.Longitude.Value;
+	}
+}
+
+@using (Html.BeginForm())
+{
+	<form>
+		<h4 style="color:#f8b739">Junction detail</h4>
+		<hr />
+		@Html.ValidationSummary(true, "", new { @class = "" })
+		@Html.HiddenFor(model => model.Id)
+		<div class="form-row">
+			<div class="form-group col-md-10">
+				@Html.LabelFor(model => model.JunctionId@*, htmlAttributes: new { @class = "control-label col-md-2" }*@)
+				@Html.EditorFor(model => model.JunctionId, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+				@Html.ValidationMessageFor(model => model.JunctionId, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-row ">
+			<div class="col-md-4">
+				@Html.LabelFor(model => model.Name@*, htmlAttributes: new { @class = "control-label col-md-2" }*@)
+				@Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+				@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				@Html.LabelFor(model => model.District@*, htmlAttributes: new { @class = "control-label col-md-2" }*@)
+
+				@Html.EditorFor(model => model.District, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+				@Html.ValidationMessageFor(model => model.District, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="col-md-4">
+				@Html.LabelFor(model => model.Latitude@*, htmlAttributes: new { @class = "control-label col-md-2" }*@)
+				@Html.EditorFor(model => model.Latitude, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+				@Html.ValidationMessageFor(model => model.Latitude, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				@Html.LabelFor(model => model.Longitude@*, htmlAttributes: new { @class = "control-label col-md-2" }*@)
+				@Html.EditorFor(model => model.Longitude, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+				@Html.ValidationMessageFor(model => model.Longitude, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="col-md-10">
+				@Html.LabelFor(model => model.JunctionIp@*, htmlAttributes: new { @class = "control-label col-md-2" }*@)
+				@Html.EditorFor(model => model.JunctionIp, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+				@Html.ValidationMessageFor(model => model.JunctionIp, "", new { @class = "text-danger" })
+			</div>
+
+		</div>
+		<br />
+		<div class="form-group">
+			<label> Junction Location</label>
+			<div class="row">
+
+				<div class="col-md-12">
+					<div id="googleMap" style="height: 500px"></div>
+				</div>
+			</div>
+		</div>
+		@*<div class="form-group">
+				@Html.LabelFor(model => model.State, htmlAttributes: new { @class = "control-label col-md-2" })
+				<div class="col-md-10">
+					@Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control" } })
+					@Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+				</div>
+			</div>*@
+		@*<div class="form-row">
+				<div class="col-md-offset-2 col-md-2">
+					<button type="submit" value="Save" class="btn btn-primary" />
+				</div>
+			</div>*@
+	</form>
+}
+@Html.ActionLink("Back to List", "GetJunctionList")
+@section scripts{
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyC4mC-WLZABobydAkWwVhyaYQerMssTTwQ"></script>
+	<script src="~/Scripts/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function () {
+
+				window.onload = initialize;
+
+				function initialize() {
+					var map = new google.maps.Map(document.getElementById('googleMap'), {
+						zoom: @zoomLevel,
+						center: new google.maps.LatLng(@latitude, @longitude),
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					});
+
+					var vMarker = new google.maps.Marker({
+						position: new google.maps.LatLng(@latitude, @longitude),
+						draggable: false
+					});
+
+					//google.maps.event.addListener(vMarker, 'dragend', function (evt) {
+					//    $("#latitude").val(evt.latLng.lat().toFixed(6));
+					//    $("#longitude").val(evt.latLng.lng().toFixed(6));
+
+					//    map.panTo(evt.latLng);
+					//});
+
+					map.setCenter(vMarker.position);
+
+					vMarker.setMap(map);
+				}
+			});
+
+	</script>
+}

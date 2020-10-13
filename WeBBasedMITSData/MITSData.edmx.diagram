@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8474a3c02134568ad96bf7d500a0232" Name="Diagram1">
+        <EntityTypeShape EntityType="MITSDatabaseModel.C__MigrationHistory" Width="1.5" PointX="9.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.C__RefactorLog" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ActivityLog" Width="1.5" PointX="7.5" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ApplyNewStreetLight" Width="1.5" PointX="7.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ApplyNewStreetLightImg" Width="1.5" PointX="10" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.AspNetRole" Width="1.5" PointX="0.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.AspNetUser" Width="1.5" PointX="3" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ClassificationAlarm" Width="1.5" PointX="5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ClassificationCameraList" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ClassificationData" Width="1.5" PointX="5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ClientAdminUser" Width="1.5" PointX="5.25" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.CompanyProfile" Width="1.5" PointX="5.25" PointY="38.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.ControllerClockSetting" Width="1.5" PointX="12.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.Country" Width="1.5" PointX="0.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.GreenTimeArchive" Width="1.5" PointX="12.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.GroupDetail" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.GroupEnableDetail" Width="1.5" PointX="12.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionAlarm" Width="1.5" PointX="12.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionAPUFirmware" Width="1.5" PointX="12.75" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionFeature" Width="1.5" PointX="11.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionList" Width="1.5" PointX="10.5" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionMonitoringString" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionMultiplanTimeSetting" Width="1.5" PointX="12.75" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionPhaseTemplate" Width="1.5" PointX="12.75" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionPhasingFlow" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionSpecification" Width="1.5" PointX="12.75" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionVARevisedAlarm" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.JunctionVaTimeSetting" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.LiveCctv" Width="1.5" PointX="13.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.LoopDetail" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.LoopEnableDetail" Width="1.5" PointX="12.75" PointY="60.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.PersonInCharge" Width="1.5" PointX="7.5" PointY="99.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.State" Width="1.5" PointX="3" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.StreetLightComplaintImg" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.StreetLightComplaint" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.StreetLightListOfName" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.StreetLightLogin" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.sysdiagram" Width="1.5" PointX="2.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.tblAlarm" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.tblGreenTime" Width="1.5" PointX="4.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.tblJunctionSetting" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.tblMonitoring" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.tblProduct" Width="1.5" PointX="15.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.tblSale" Width="1.5" PointX="14.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.Telegram" Width="1.5" PointX="12.75" PointY="67.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.Todo" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.TrafficLightComplaintImg" Width="1.5" PointX="10" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.TrafficLightComplaint" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.VaIntelligent" Width="1.5" PointX="6.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.VaIntelligentSetting" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MITSDatabaseModel.VehicleCountArchive" Width="1.5" PointX="2.75" PointY="17.75" IsExpanded="true" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_ActivityLogs_ToCompanyProfiles" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_ApplyNewStreetLightImg_ApplyNewStreetLight" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_ClientAdminUsers_ToAspNetUsers_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_ClientAdminUsers_ToAspNetUsers_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_CompanyProfiles_ToAspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_ClassificationAlarms_ClassificationCameraList" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_ClassificationData_ClassificationCameraList" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_CompanyProfiles_ToCountries" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_CompanyProfiles_ToStates" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_JunctionLists_ToCompanyProfiles" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_PersonInCharges_ToCompanyProfiles" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_ControllerClockSettings_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_States_ToCountries" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_GreenTimeArchives_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_GroupEnableDetails_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_JunctionAlarms_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_JunctionAPUFirmware_JunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_JunctionLists_ToStates" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_JunctionMultiplanTimeSettings_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_JunctionPhaseTemplates_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_JunctionSpecifications_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_LoopEnableDetails_ToJunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_Telegram_JunctionLists" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_StreetLightComplaintImg_StreetLightComplaints" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_StreetLightComplaintImg_StreetLightListOfName" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.FK_TrafficLightComplaintImg_TrafficLightComplaints" ManuallyRouted="false" />
+        <AssociationConnector Association="MITSDatabaseModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,71 @@
+﻿
+
+@{
+	ViewBag.Title = "Dashboard";
+}
+@using (Html.BeginForm())
+{
+	<div class="container-fluid">
+		<div class="row mt-3">
+
+			<div class="col-12 col-lg-6 col-xl-3">
+				<a href="/JunctionList/GetJunctionList">
+					<div class="card" style="background-color:rgba(108, 117, 125, 0.5)">
+						<div class="card-body">
+							<div class="media align-items-center">
+								<div class="w-icon"><i class="fa fa-bars text-white" style="font-size:xx-large"></i></div>
+								<div class="media-body ml-3 border-left-xs border-light-3">
+									<h4 class="mb-1 ml-3" style="color:azure; font-family:Arial, Helvetica, sans-serif">Manage Junction</h4>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-12 col-lg-6 col-xl-3">
+				<a href="/Home/JunctionMonitoring">
+					<div class="card" style="background-color:rgba(108, 117, 125, 0.5)">
+						<div class="card-body">
+							<div class="media align-items-center">
+								<div class="w-icon"><i class="fa fa-laptop text-white" style="font-size:xx-large"></i></div>
+								<div class="media-body ml-3 border-left-xs border-light-3">
+									<h4 class="mb-1 ml-3" style="color:azure; font-family:Arial, Helvetica, sans-serif">Junction Monitoring</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-lg-6 col-xl-3">
+				<a href="/Home/JunctionMonitoring">
+					<div class="card" style="background-color:rgba(108, 117, 125, 0.5)">
+						<div class="card-body">
+							<div class="media align-items-center">
+								<div class="w-icon"><i class="fa fa-clock-o text-white" style="font-size:xx-large"></i></div>
+								<div class="media-body ml-3 border-left-xs border-light-3">
+									<h4 class="mb-1 ml-3" style="color:azure; font-family:Arial, Helvetica, sans-serif">Junction VA Time Settings</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-lg-6 col-xl-3">
+				<a href="/JunctionSpecification/JunctionListSpecification">
+					<div class="card" style="background-color:rgba(108, 117, 125, 0.5)">
+						<div class="card-body">
+							<div class="media align-items-center">
+								<div class="w-icon"><i class="fa fa-laptop text-white" style="font-size:xx-large"></i></div>
+								<div class="media-body ml-3 border-left-xs border-light-3">
+									<h4 class="mb-1 ml-3" style="color:azure; font-family:Arial, Helvetica, sans-serif">Junction Specification</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+}
